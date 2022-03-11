@@ -1,0 +1,9 @@
+p{
+    color:yellow; 
+    -webkit-animation: color-change 1s;
+}
+
+@-webkit-keyframes color-change {
+
+    100% { color: green; }
+}
