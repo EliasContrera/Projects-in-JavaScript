@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consigna 5 JSCRIPT</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <form action="">
+
+            <div class="mb-3">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="nombrecompleto" required>
+            </div>
+
+            <div class="mb-1">
+                <label for="edad">Edad:</label>
+                <input type="number" max="85" min="18" class="form-control" id="edad" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo:</label>
+                <input type="email" required class="form-control" id="email" placeholder="Ingrese su correo" name="email">
+            </div>
+
+
+            <div class="mb-3">
+                <label for="fecha">Fecha de incidente:</label><br>
+                <input type="date" required class="form-control" id="fecha">
+            </div>
+
+
+
+            <div class="mb-3">
+                <label for="descripcion">Descripcion:</label>
+                <textarea name="descripcion" class="form-control" id="descripcion" cols="5" rows="5" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <button type="submit" id="enviar" class="btn btn-primary">
+                <i class="fas fa-envelope"></i> Enviar reporte</button>
+            </div>
+
+
+
+       <div class="mb-3">
+            <label for="incidentes">Selecciona un incidente:</label>
+            <select id="incidentes" class="form-select">
+                <option value="incidente1">Incidente 1</option>
+                <option value="incidente2">Incidente 2</option>
+                <option value="incidente3">Incidente 3</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="nuevoIncidente">Agregar nuevo incidente:</label>
+            <input type="text" class="form-control" id="nuevoIncidente">
+        </div>
+
+        <div class="mb-3">
+            <button type="button" id="agregarIncidente" class="btn btn-success">
+                Agregar
+            </button>
+            <button type="button" id="modificarIncidente" class="btn btn-warning">
+                Modificar
+            </button>
+            <button type="button" id="borrarIncidente" class="btn btn-danger">
+                Borrar
+            </button>
+        </div>
+
+        </form>
+    </div>
+</body>
+</html>

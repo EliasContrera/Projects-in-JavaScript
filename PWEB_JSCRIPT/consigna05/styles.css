@@ -1,0 +1,20 @@
+body{
+    background-color: grey;
+}
+
+/* Estilo para los inputs */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.input-container input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Estilo para los botones */
+.btn {
+    margin-right: 10px;
+}

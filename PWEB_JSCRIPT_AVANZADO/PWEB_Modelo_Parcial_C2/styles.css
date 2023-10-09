@@ -1,0 +1,12 @@
+table .td_nota_reprobado{
+    background-color: orange !important; /*Evitar el uso de !important, en este caso, no encontraba solucion para mostrar los fondos que no sea esta */
+}
+table .td_nota_aprobado{
+    background-color: skyblue !important;
+}
+table .td_nota_promocionado{
+    background-color: green !important;
+}
+table .td_nota_ausente{
+    background-color: red !important;
+}

@@ -1,0 +1,42 @@
+/*Clases propias que utilizo para ocultar y mostrar los select de la pagina, las agrego o remuevo usando javascript */
+.ObraSocialOculta {
+    display: none;
+}
+
+
+.obrasocial-visible {
+    display: block;
+}
+
+
+.medicoNeumonologia{
+    display: none;
+}
+
+.medicosInmunologia{
+    display: none;
+}
+
+.medicoTraumatologia{
+    display: none;
+}
+
+
+.mostrarNeumonologia{
+    display: block;
+}
+
+.mostrarInmunologia{
+    display: block;
+}
+
+.mostrarmedicoTraumatologia{
+    display: block;
+}
+
+
+input[type='number']{ /* a todos los inputs de tipo number le aplico los stilos */
+    background-color: rgb(0, 32, 44);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}

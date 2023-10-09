@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARCIAL Nro. 1</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid p-2 bg-primary text-white text-center">
+        <h1>PROGRAMACION WEB</h1>
+        <p>PARCIAL Nro. 1 - Elias Contrera</p> 
+    </div>
+    
+    <div class="container mt-5 col-lg-7">
+        <form action="" id="formu">
+            <div class="row">
+                <div class="col-lg-6">
+                    <label for="nombre" class="text-center">Nombre y Apellido</label><br>
+                    <input type="text" class="form-control" required id="nombre">
+                    <div class="invalid-feedback">El nombre ingresado no respeta el formato de 2 palabras entre 3 y 15 caracteres cada una.</div>
+                    
+                </div>
+
+                <div class="col-lg-6">
+                    <label for="Documento">Nro. Documento</label><br>
+                    <input type="number" class="form-control" min="100000" max="99999999" required id="Documento" pattern="[a-zA-Z ]">
+                    <div class="invalid-feedback">Documento invalido</div>
+
+                </div>
+
+                <div class="col-lg-6">
+                        <label for="cobertura">Cobertura: </label>
+                        <select name="cobertura" id="cobertura" required class="form-control">
+                            <option value=""></option>
+                            <option value="Particular">Particular</option>
+                            <option value="Obra Social">Obra Social</option>
+                            <option value="Prepaga">Prepaga</option>
+                        </select>
+                        <div class="invalid-feedback">No selecciono ninguna opcion</div>
+                </div>
+
+                <div class="col-lg-6 ObraSocialOculta" id="obraoculta">
+                        <label for="ObraPrepaga">Obra Social/Prepaga: </label>
+                        <select name="ObraPrepaga" id="ObraPrepaga"  class="form-control ">
+                            <option value="">Union Personal</option>
+                            <option value="">Accord Salud</option>
+                            <option value="">OSDE</option>
+                            <option value="">OSECAC</option>
+                            <option value="">Otra</option>
+                        </select>
+                        <div class="invalid-feedback">No selecciono ninguna opcion</div>
+                </div>
+
+    
+                <div class="col-lg-6 "> 
+                    <label for="especialidad">Especialidad: </label> <!-- Para las especialidades, utilice selects segun corresponda -->
+                    <select name="especialidad" id="especialidad" required class="form-control">
+                        <option value=""></option>
+                        <option value="Alergia e Inmunologia">Alergia e Inmunologia</option>
+                        <option value="Traumatologia">Traumatologia</option>
+                        <option value="Neumonologia">Neumonologia</option>
+                    </select>
+                    <div class="invalid-feedback">No selecciono ninguna opcion</div>
+                </div>
+
+                <div class="col-lg-6 medicosInmunologia" id="medicosInmunologia">
+                    <label for="medico">Medico Inmunologia: </label>
+                    <select name="medico" id="medico" class="form-control" class="form-control">
+                        <option value="" id="Inmunologia">Dra. Juana López (Alergia e Inmunología)</option>
+                        <option value="" id="Inmunologia">Dr. Juan Amadeo (Alergia e Inmunología)</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-6 medicoTraumatologia" id="medicoTraumatologia">
+                    <label for="medico">Medico Traumatología: </label>
+                    <select name="Traumatología" id="Traumatología" class="form-control">
+                        <option value="">Dra. Nancy Torres (Traumatología)</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-6 medicoNeumonologia" id="medicoNeumonologia">
+                    <label for="medico">Medico Neumonología: </label>
+                    <select name="Neumonología" id="Neumonología" class="form-control">
+                        <option value="">Dr. Luis Giolito (Neumonología)</option>
+                        <option value="" >Dr. Gerardo Ibarra (Neumonología)</option>
+                    </select>
+                </div>
+            </div><br>
+ 
+
+            <div class="mb-3 text-center">
+                <button type="submit" id="guardar" class="btn btn-primary">
+                <i class="fas fa-envelope"></i>ENVIAR</button>
+            </div>
+
+        </form>
+    </div>
+
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+             <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">Formulario enviado.</h4>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Gracias por su solicitud. Nos contactaremos a la brevedad
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">cerrar</button>
+                </div>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
