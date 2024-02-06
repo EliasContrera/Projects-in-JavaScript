@@ -1,0 +1,92 @@
+header{
+    text-align: center;
+    background-color: gray;
+    color: white;
+}
+
+
+@media (max-width: 945px) and (min-width: 51px){
+
+    
+    form {
+        font-size: 35px;
+    }
+
+    header{
+        text-align: center;
+        background-color: greenyellow;
+        color: black;
+        padding: 5px;
+    }
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        text-align: left;
+    }
+}
+
+/*Iphone 6*/
+@media (max-height: 667px){
+
+    form {
+        font-size: 25px;
+    }
+
+    header{
+        text-align: center;
+        background-color: gold;
+        color: white;
+        padding: 5px;
+    }
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        text-align: left;
+    }
+}
+/*Iphone 7*/
+@media (min-width: 374px) and (max-width: 376){
+
+    form {
+        font-size: 20px;
+    }
+
+    header{
+        text-align: center;
+        background-color: gray;
+        color: white;
+        padding: 5px;
+    }
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        text-align: left;
+    }
+}
+/*Iphone 8*/
+@media (max-width: 390px){
+
+    form {
+        font-size: 30px;
+    }
+
+    header{
+        text-align: center;
+        background-color: pink;
+        color: white;
+        padding: 5px;
+    }
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        text-align: left;
+    }
+}

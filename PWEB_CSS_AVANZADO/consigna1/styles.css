@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+}
+
+.titulo {
+  background-color: plum;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  font-weight: 1000;
+}
+
+/* */
+.barranavegacion {
+  overflow: hidden;
+  background-color: orange;
+}
+
+/* */
+.barranavegacion a {
+  float: right;
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*Cambian los colores cuando esta encima */
+.barranavegacion a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.parrafos h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 5100;
+}
+
+.parrafos p {
+  text-align: left;
+}
+
+
+.imagenes p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.imagenes img {
+  display: block;
+  margin: 0 auto;
+  height: 400px;
+  width: 400px;
+  border-radius: 8px;
+  max-width: 100%; /* Hace que la imagen no exceda el ancho del div */
+  height: auto; /* Mantiene la proporción de la imagen */
+  
+}
+
+.titulo img {
+  float: right;
+  width: 120px;
+  height: 60px;
+}
+
+.items {
+  background-color: tomato;
+}
+
+ul.items {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+ul.items li {
+  margin: 0.5ex;
+  display: inline;
+
+}
+
+.opcionesarriba{
+  background-color: blueviolet;
+  color: aliceblue;
+}
+
+ul.opcionesarriba li{
+  padding-bottom: 2ex;
+  padding-right: 3ex;
+  display: inline;
+
+}
+
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas de celular */
+  .imagenes img {
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .titulo img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  ul.opcionesarriba li {
+    padding-right: 1ex;
+  }
+
+  ul.items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul.items li {
+    margin: 1ex;
+  }
+}

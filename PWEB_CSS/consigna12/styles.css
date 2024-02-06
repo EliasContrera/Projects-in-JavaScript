@@ -1,0 +1,6 @@
+.divPrueba{
+    background-color: aqua;
+    border: 2px, solid, black;
+    resize: both;
+    overflow: auto;
+}

@@ -1,0 +1,7 @@
+div.destacado img.importante{
+    opacity: 0.9;
+}
+
+div.destacado img{
+    opacity: 0.5;
+}

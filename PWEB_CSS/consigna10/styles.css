@@ -1,0 +1,14 @@
+p{
+    color: yellow;
+    animation: averde 1.5s infinite;
+}
+
+@keyframes averde{
+    /*100% {color: green;}*/
+    from{
+        color: yellow;
+    }
+    to{
+        color: green;
+    }
+}

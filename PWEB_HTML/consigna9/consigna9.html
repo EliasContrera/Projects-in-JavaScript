@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consigna 9</title>
+</head>
+<body>
+
+    <center>
+        <h1>FORMULARIO VOLEY</h1>
+    </center>
+
+
+            <div class="container mt-5">
+                <form action="/action_page.php">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" name="email">
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Contraseña:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Ingrese su contraseña" name="pswd">
+                    </div>
+        
+                    <div class="mb-3">
+                        <label class="form-label">¿Usted practica este deporte?</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="deporte" id="si" value="si">
+                            <label class="form-check-label" for="si">Si</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="deporte" id="no" value="no">
+                            <label class="form-check-label" for="no">No</label>
+                        </div>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="fecha">En caso de que su respuesta fuera "Si", ¿En qué fecha comenzó a jugar voleibol?</label><br>
+                        <input type="date" class="form-control" name="fecha">
+                    </div>
+        
+                    <div class="mb-3">
+                        <label class="form-label">¿Cuántos armadores hay en el sistema 5-1?</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="sistema" id="1-armador" value="1">
+                            <label class="form-check-label" for="1-armador">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="sistema" id="2-armadores" value="2">
+                            <label class="form-check-label" for="2-armadores">2</label>
+                        </div>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="opcions">¿Qué posición se encarga de defender y no de atacar y armar?</label><br>
+                        <select class="form-select" name="opcions">
+                            <option value="libero">Libero</option>
+                            <option value="Armador">Armador</option>
+                            <option value="Opuesto">Opuesto</option>
+                        </select>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="beach">¿Cómo se le llama al voleibol sobre arena?</label><br>
+                        <input type="text" class="form-control" name="beach">
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="sistema42">¿Cuál es el sistema en el que hay 2 armadores y 4 atacantes?</label><br>
+                        <select class="form-select" name="sistema42">
+                            <option value="4-2">4-2</option>
+                            <option value="6-0">6-0</option>
+                            <option value="2-2-4">2-2-4</option>
+                        </select>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label>¿En qué posición juega? (Puede seleccionar más de una)</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="posicion" id="armador" value="Armador">
+                            <label class="form-check-label" for="armador">Armador</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="posicion" id="punta" value="Punta">
+                            <label class="form-check-label" for="punta">Punta</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="posicion" id="central" value="Central">
+                            <label class="form-check-label" for="central">Central</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="posicion" id="libero" value="Libero">
+                            <label class="form-check-label" for="libero">Libero</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="posicion" id="opuesto" value="Opuesto">
+                            <label class="form-check-label" for="opuesto">Opuesto</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="posicion" id="no-sabe" value="No sabe, no contesta">
+                            <label class="form-check-label" for="no-sabe">No sabe, no contesta</label>
+                        </div>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="entrenador">Explicar brevemente por qué es importante el rol del entrenador en la cancha:</label>
+                        <textarea class="form-control" rows="4" name="entrenador"></textarea>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="capitan">¿Cómo se diferencia al capitán del equipo?:</label>
+                        <textarea class="form-control" rows="4" name="capitan"></textarea>
+                    </div>
+        
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> ENVIAR</button>
+                    </div>
+        
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" name="remember" id="remember">
+                        <label class="form-check-label" for="remember">Recuérdame</label>
+                    </div>
+                </form>
+            </div>
+    
+        
+        
+
+    <footer>Woozie</footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+#tablaUsuarios{
+    border: 2px solid black;
+    padding: 5px;
+    background-color: yellow;
+}
+
+#tablaUsuarios td, #tablaUsuarios th {
+    border: 2px solid black; 
+    padding: 5px;     
+  }

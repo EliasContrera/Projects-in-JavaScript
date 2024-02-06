@@ -1,0 +1,172 @@
+body{
+    font-size: 20px;
+}
+
+
+.menu {
+overflow: hidden;
+background-color:gray;
+color: white;
+text-align: center;
+}
+
+
+
+.menu ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 2px;
+    display:inline-block;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px ;
+}
+
+
+.menu .upe:hover {
+    color: blue;
+  }
+
+.menu .youtube:hover{
+    color: red;
+  }
+
+.menu .linkedin:hover{
+    color:aquamarine;
+}
+
+
+.imagen img{
+    display: block;
+    margin: 0 auto;
+    height: 900px;
+    width: 900px;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto; 
+    padding-top: 10px;
+}
+
+.imagen p{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+@media (max-width: 746px){
+
+    body{
+        font-size: 14px;
+    }
+
+    .menu {
+        background-color:gray;
+        color: white;
+        text-align: center;
+      }
+      
+
+      .menu ul {
+        list-style: none;
+        margin: 0 auto;
+        padding: 2px;
+        display: inline-block;
+      }
+      
+      .menu li{
+        margin: 5px;
+      }
+    
+      .menu a {
+        text-decoration: none;
+        color: white;
+      }
+      
+    .menu .upe:hover {
+        color: blue;
+      }
+    
+    .menu .youtube:hover{
+        color: red;
+      }
+    
+    .menu .linkedin:hover{
+        color:aquamarine;
+    }
+
+    .imagen img{
+        display: block;
+        margin: 0 auto;
+        height: 600px;
+        width: 600px;
+        border-radius: 8px;
+        max-width: 100%; 
+        height: auto; /* altura en automatico de la imagen */
+    }
+}
+
+@media (max-width: 480){
+    
+    body{
+        font-size: 10px;
+        
+    }
+
+    .menu {
+        overflow: hidden;
+        background-color:gray;
+        color: white;
+        text-align: center;
+      }
+      
+      /* Estilos para la lista de elementos del menú */
+      .menu ul {
+        list-style: none;
+        margin: 0 auto;
+        padding: 2px;
+        display: inline-block;
+      }
+      
+      .menu li{
+        margin: 5px;
+      }
+      /* Estilos para los links del menú */
+      .menu a {
+        text-decoration: none;
+        color: white;
+      }
+      
+      /* Cambio de color al pasar el mouse sobre los enlaces */
+    .menu .upe:hover {
+        color: blue;
+      }
+    
+    .menu .youtube:hover{
+        color: red;
+      }
+    
+    .menu .linkedin:hover{
+        color:aquamarine;
+    }
+
+    .imagen img{
+        display: block;
+        margin: 0 auto;
+        height: 400px;
+        width: 400px;
+        border-radius: 8px;
+        max-width: 100%; /* Hace que la imagen no exceda el ancho del div */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .imagen p{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: gray;
+
+    }
+}

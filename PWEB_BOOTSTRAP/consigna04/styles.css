@@ -1,0 +1,11 @@
+.opcionesarriba{
+    background-color: gray;
+    color: aliceblue;
+  }
+  
+  ul.opcionesarriba li{
+    padding-bottom: 2ex;
+    padding-right: 3ex;
+    display: inline;
+  
+  }
